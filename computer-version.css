@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.h1body {
+    background-color: rgb(192, 255, 216);
+    position: absolute;
+    width: 30%;
+    left: 90px;
+    top: 150px;
+    font-size: 25px;
+    text-align: start;
+}
+.h1body2 {
+    position: absolute;
+    width: 30%;
+    right: 90px;
+    bottom: 150px;
+    font-size: 20px;
+    text-align: end;
+}
+strong {
+    background-color: rgb(192, 255, 216);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.sec1 {
+    background-image: url(assets/iphone.png);
+    width: 350px;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.iphone {
+    pointer-events: none;
+    width: 350px;
+    height: 700px;
+    pointer-events: visible;
+}
+.tabs {
+    background-color: yellow;
+    position: absolute;
+    width: 313px;
+    height: 627px;
+    top: 60px;
+    left: 18px;
+    border-radius: 0px 0px 43px 43px;
+}
+.tab1 {
+    background-color: rgb(22, 155, 24);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 35px 35px;
+    display: none;
+}
+.tab2 {
+    background-color: rgb(12, 82, 15);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 35px 35px;
+    display: flex;
+}
+.tab3 {
+    background-color: rgb(14, 60, 26);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 35px 35px;
+    display: none;
+}
+
+nav {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 313px;
+    height: 60px;
+    bottom: 0px;
+    border-radius: 0px 0px 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+}
+nav>i {
+    color: rgb(203, 203, 203);
+    font-size: 30px;
+    padding: 0px 35px 0px 35px;
+    cursor: pointer;
+}
+.divisoria {
+    border-left: 1px rgb(228, 228, 228) solid;
+}
+nav>i:hover {
+    color: rgb(83, 122, 98);
+}

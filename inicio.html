@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abled</title>
+    <link rel="stylesheet" href="computer-version.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="nav.js"></script>
+</head>
+<body>
+    <div class="h1body">
+        <h1>This site is designed for mobile devices.</h1>
+    </div>
+    <div class="h1body2">
+        <h1>Access via cell phone for a <strong>better</strong> experience.</h1>
+    </div>
+    <section class="sec1">
+        <div class="tabs">
+            <div id="notification" class="tab1"></div>
+            <div id="start" class="tab2"></div>
+            <div id="setting" class="tab3"></div>
+            <nav>
+                <i id="btn-notification" class="fa-solid fa-bell"></i>
+                <i id="btn-start" class="divisoria fa-solid fa-house"></i>
+                <i id="btn-setting" class="divisoria fa-solid fa-gear"></i>
+            </nav>
+        </div>
+    </section>
+    <script>
+        var btnNotification = document.getElementById('btn-notification');
+        var btnStart = document.getElementById('btn-start');
+        var btnSetting = document.getElementById('btn-setting');
+        var notification = document.getElementById('notification');
+        var start = document.getElementById('start');
+        var setting = document.getElementById('setting');
+
+        btnNotification.addEventListener('click', function() {
+            start.style.display = 'none';
+            setting.style.display = 'none';
+            notification.style.display = 'flex';
+        });
+        
+        btnStart.addEventListener('click', function() {
+            start.style.display = 'flex';
+            setting.style.display = 'none';
+            notification.style.display = 'none';
+        });
+        
+        btnSetting.addEventListener('click', function() {
+            start.style.display = 'none';
+            setting.style.display = 'flex';
+            notification.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
