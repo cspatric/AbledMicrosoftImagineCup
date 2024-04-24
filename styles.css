@@ -1,3 +1,26 @@
+[data-bs-theme="abled"] {
+    --bs-body-color: #242424;
+    --bs-body-color-rgb: #{to-rgb(#242424)};
+    --bs-body-bg: #F4F9F4;
+    --bs-body-bg-rgb: #{to-rgb(#F4F9F4)};
+  
+    .dropdown-menu {
+      --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+      --bs-dropdown-link-active-bg: #{$blue-700};
+    }
+  
+    .btn-secondary {
+      --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+      --bs-btn-border-color: #{rgba($white, .25)};
+      --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+      --bs-btn-hover-border-color: #{rgba($white, .25)};
+      --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+      --bs-btn-active-border-color: #{rgba($white, .5)};
+      --bs-btn-focus-border-color: #{rgba($white, .5)};
+      --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+    }
+  }
+
 * {
     padding: 0px;
     margin: 0px;
@@ -23,7 +46,7 @@
 strong {
     background-color: rgb(192, 255, 216);
 }
-body {
+.computer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +104,7 @@ body {
     display: none;
 }
 
-nav {
+.iphoneNav {
     position: absolute;
     background-color: rgb(255, 255, 255);
     width: 313px;
@@ -94,7 +117,7 @@ nav {
     align-items: center;
     text-align: center;
 }
-nav>i {
+.iphoneNav >i {
     color: rgb(203, 203, 203);
     font-size: 30px;
     padding: 0px 35px 0px 35px;
@@ -103,6 +126,27 @@ nav>i {
 .divisoria {
     border-left: 1px rgb(228, 228, 228) solid;
 }
-nav>i:hover {
+.iphoneNav>i:hover {
     color: rgb(83, 122, 98);
+}
+
+.mobileNav {
+    background-color: #C4E3CB;
+    padding: 20px !important;
+}
+
+.mNavIcon {
+    color: #F4F9F4;
+    filter: drop-shadow(0px 0px 1000px rgba(0, 0, 0, 1));
+}
+@media all and (max-width: 600px) {
+    .computer {
+        display: none;
+    }
+  }
+
+@media not all and (max-width: 600px) {
+    .mobile {
+        display: none;
+    }
 }
